@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Zeluxia Dashboard</title>
+  </head>
+  <body>
+    <!--DOUBLE NAVBAR -->
+    <div class="container">
+      <!--NAV 1-->
+      <div class="top_nav">
+        <div class="left">
+          <ul class="nav_links">
+            <li class="dropdown" id="currency-change">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Taka</a
+              >
+            </li>
+            <li>
+              <span class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                "Bkash Merchant- 01944448333"</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <ul class="nav_links">
+            <li>
+              <a href="#">TRACK ORDER</a>
+            </li>
+            <li>
+              <a href="#">BE AN AFFILIATE PARTNER</a>
+            </li>
+            <li>
+              <a href="#">MY PANEL</a>
+            </li>
+            <li>
+              <a href="#">LOGOUT</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--NAV 1 END-->
+
+      <!--NAV 2-->
+      <div class="bottom_nav">
+        <img class="logo" src="img/logo.png" alt="logo" />
+
+        <form role="search" class="form d-flex w-50">
+          <div class="input-group">
+            <input type="hidden" id="txt-category" />
+            <input
+              type="text"
+              id="txt-search"
+              class="form-control"
+              placeholder="I am searching for..."
+            />
+            <div class="input-group-btn">
+              <button
+                type="button"
+                class="btn btn-light dropdown-toggle"
+                id="dropdowncategory"
+                data-bs-toggle="dropdown"
+              >
+                <span id="srch-category">Category</span>
+              </button>
+              <ul
+                class="dropdown-menu"
+                id="mnu-category"
+                aria-labelledby="dropdowncategory"
+              >
+                <li><a class="dropdown-item" href="#">Apps</a></li>
+                <li><a class="dropdown-item" href="#">eBooks</a></li>
+                <li><a class="dropdown-item" href="#">Games</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">Videos</a></li>
+              </ul>
+            </div>
+            <span class="input-group-btn">
+              <button id="btn-search" type="submit" class="btn btn-light">
+                <span>
+                  <i class="fas fa-search"></i>
+                </span>
+              </button>
+            </span>
+          </div>
+        </form>
+
+        <div class="icons d-flex">
+          <ul class="nav_links">
+            <li>
+              <i class="fas fa-sync"></i><span>Compare</span>
+              <span class="badge bg-danger" id="lblCompareCount"> 0 </span>
+            </li>
+            <li>
+              <i class="far fa-heart"></i><span>Wishlist</span>
+              <span class="badge bg-danger" id="lblWishCount"> 8 </span>
+            </li>
+            <li>
+              <i class="fas fa-shopping-cart"></i><span>Cart</span>
+              <span class="badge bg-danger" id="lblCartCount"> 0 </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--NAV 2 END-->
+    </div>
+    <!--DOUBLE NAV END-->
+
+    <!--MAIN CONTENT-->
+    <section class="profile py-4 bg-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3 mx-0" style="background-color: white">
+            <div class="profile-box text-center p-3">
+              <img src="img/user.png" class="image rounded-circle" />
+              <div class="name p-2">Tanisha Kabir Kakon</div>
+            </div>
+            <div class="profile-title py-3">
+              <span>Menu</span>
+            </div>
+            <div class="profile-menu py-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn active show"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-1"
+                  >
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="category-name"> Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-2"
+                  >
+                    <i class="far fa-file-alt"></i>
+                    <span class="category-name"> Purchase History</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-3"
+                  >
+                    <i class="far fa-file-alt"></i>
+                    <span class="category-name"> Send Refund Request</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-4"
+                  >
+                    <i class="far fa-heart"></i>
+                    <span class="category-name"> Wishlist</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-5"
+                  >
+                    <i class="far fa-comment-alt"></i>
+                    <span class="category-name"> Conversation</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-6"
+                  >
+                    <i class="far fa-user"></i>
+                    <span class="category-name"> Manage Profile</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-7"
+                  >
+                    <i class="fas fa-dollar-sign"></i>
+                    <span class="category-name"> My Wallet</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn"
+                    type="button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-8"
+                  >
+                    <i class="far fa-life-ring"></i>
+                    <span class="category-name"> Support Ticket</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane show active" id="tab-1">
+                <div class="row d-flex g-4">
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                      <div class="green-box">
+                        <a href="" class="d-block">
+                          <i class="fas fa-shopping-cart"></i>
+                          <span class="d-block title"> 0 Product </span>
+                          <span class="d-block sub-title"> in your cart </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                      <div class="pink-box">
+                        <a href="" class="d-block">
+                          <i class="fas fa-heart"></i>
+                          <span class="d-block title"> 3 Product(s) </span>
+                          <span class="d-block sub-title">
+                            in your wishlist
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="card text-center">
+                      <div class="yellow-box">
+                        <a href="" class="d-block">
+                          <i class="fas fa-building"></i>
+                          <span class="d-block title"> 3 Product(s) </span>
+                          <span class="d-block sub-title"> you ordered </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                      <div class="card-header">Saved Shipping Info</div>
+                      <div class="card-body">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Address:</td>
+                              <td class="p-2">
+                                House 111, Road 10, Block # C, Bashundhara R/A
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Country:</td>
+                              <td class="p-2">Bangladesh</td>
+                            </tr>
+                            <tr>
+                              <td>City:</td>
+                              <td class="p-2">Dhaka</td>
+                            </tr>
+                            <tr>
+                              <td>Phone:</td>
+                              <td class="p-2">0021653284</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                      <div class="card-header">Purchased Package</div>
+                      <div class="card-body p-2 text-center">
+                        <strong>
+                          <p>Package Removed</p>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="tab-2">
+                <div class="row d-flex">
+                  <div class="col-md-9">
+                    <div class="card">
+                      <div>
+                        <table
+                          class="table tabel-sm table-hover table-responsive-md"
+                        >
+                          <thead>
+                            <tr>
+                              <th>Code</th>
+                              <th>Date</th>
+                              <th>Amount</th>
+                              <th>Delivery Status</th>
+                              <th>Payment Status</th>
+                              <th>Options</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>200165-356463</td>
+                              <td>01-10-2019</td>
+                              <td>720.00</td>
+                              <td>Delivered</td>
+                              <td>
+                                Paid
+                                <!--<span class="badge bg-success mr-4">
+                                          <i class="bg-green"></i>
+                                          "Paid"
+                                        </span>-->
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn"
+                                    type="button"
+                                    id
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="fas fa-ellipsis-v"></i>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>200165-356463</td>
+                              <td>01-10-2019</td>
+                              <td>720.00</td>
+                              <td>Delivered</td>
+                              <td>
+                                Paid
+                                <!--<span class="badge bg-success mr-4">
+                                          <i class="bg-green"></i>
+                                          "Paid"
+                                        </span>-->
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn"
+                                    type="button"
+                                    id
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="fas fa-ellipsis-v"></i>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>200165-356463</td>
+                              <td>01-10-2019</td>
+                              <td>720.00</td>
+                              <td>Delivered</td>
+                              <td>
+                                Paid
+                                <!--<span class="badge bg-success mr-4">
+                                          <i class="bg-green"></i>
+                                          "Paid"
+                                        </span>-->
+                              </td>
+                              <td>
+                                <div class="dropdown">
+                                  <button
+                                    class="btn"
+                                    type="button"
+                                    id
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <i class="fas fa-ellipsis-v"></i>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="tab-6">
+                <div class="row d-flex">
+                  <div class="col-md-9">
+                    <div class="form">
+                      <form action="" method="POST">
+                        <div class="form-box">
+                          <div class="box-title px-3 py-2">Basic Info</div>
+                          <div class="box-content p-3">
+                            <div class="row d-flex">
+                              <div class="col-md-2">
+                                <label>Your Name</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="text"
+                                  class="form-control mb-3"
+                                  placeholder="Your Name"
+                                  name="name"
+                                  value="Tanisha Kabir Kakon"
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <label>Your Email</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="email"
+                                  class="form-control mb-3"
+                                  placeholder="Your Name"
+                                  name="email"
+                                  value="tanisha2014kabir@gmail.com"
+                                  disabled
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <label>Photo</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  class="form-control"
+                                  type="file"
+                                  id="formFile"
+                                  name="photo"
+                                  accept="image/*"
+                                />
+                                <label
+                                  for="formFile"
+                                  class="form-label mw-100 mb-3"
+                                ></label>
+                              </div>
+                              <div class="col-md-2">
+                                <label>Password</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="password"
+                                  class="form-control mb-3"
+                                  placeholder="New Password"
+                                  name="new_password"
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <label>Confirm Password</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="password"
+                                  class="form-control mb-3"
+                                  placeholder="Confirm Password"
+                                  name="confirm_password"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-box mt-4">
+                          <div class="box-title px-3 py-2">Shipping Info</div>
+                          <div class="box-content p-3">
+                            <div class="row d-flex">
+                              <div class="col-md-2">
+                                <label>Address</label>
+                              </div>
+                              <div class="col-md-10">
+                                <textarea
+                                  class="form-controltextarea-autogrow mb-3"
+                                  placeholder="Your Address"
+                                  name="address"
+                                  rows="1"
+                                >
+                                       House 111, Block # C, Dhaka</textarea
+                                >
+                              </div>
+                              <div class="col-md-2">
+                                <label>City</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="text"
+                                  class="form-control mb-3"
+                                  placeholder="Your City"
+                                  name="city"
+                                  value="Dhaka"
+                                />
+                              </div>
+
+                              <div class="col-md-2">
+                                <label>Postal Code</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="text"
+                                  class="form-control mb-3"
+                                  placeholder="Your Postal Code"
+                                  name="postal_code"
+                                  value="1219"
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <label>Phone</label>
+                              </div>
+                              <div class="col-md-10">
+                                <input
+                                  type="text"
+                                  class="form-control mb-3"
+                                  placeholder="Your Phone Number"
+                                  name="phone"
+                                  value="01525235235"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="text-right mt-4">
+                          <button
+                            type="submit"
+                            class="btn btn-styled btn-base-1"
+                          >
+                            Update Profile
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--MAIN CONTENT ENDS-->
+
+    <!--FOOTER-->
+    <footer class="footer" style="background-color: #444">
+      <div class="container">
+        <div class="top_footer">
+          <div class="row d-flex gx-4">
+            <div class="col-md-4 col-sm-text-center mt-5 mb-5">
+              <h5 class="header">CONTACT INFO</h5>
+              <h6 class="mt-3">Hotline 24X7</h6>
+              <p class="contact" style="color: red">+8801791566364</p>
+              <p class="mt-0">Email:</p>
+              <p>contact@zeluxiabd.com</p>
+              <p>Address:</p>
+              <p>
+                SHOP NO-306, 3RD FLOOR, MIMI SUPER MARKET, PANCHLAISH CHITTAGONG
+              </p>
+            </div>
+            <div class="col-md-8 mt-4 mb-5">
+              <div class="row d-flex g-4">
+                <div class="col-md-12">
+                  <div
+                    class="d-md-flex justify-content-between align-items-center"
+                  >
+                    <div class="content">
+                      <h3
+                        class="mb-2 mb-md-0 mt-2"
+                        style="color: white; font-size: 24px"
+                      >
+                        SIGN UP TO NEWSLETTER
+                      </h3>
+                      <p class="mb-2 mb-md-0" style="color: lightgray">
+                        Get all the latest information on Events, Sales and
+                        Offers. Sign up for newsletter today.
+                      </p>
+                    </div>
+
+                    <div class="input-group news-input w-50">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Email Address"
+                      />
+                      <button class="btn btn-danger btn-md" type="button">
+                        SUBSCRIBE
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="col-md-4 mt-3 ms-3">
+                  <h5
+                    class="text-uppercase font-weight-bold mb-3"
+                    style="font-size: 17px"
+                  >
+                    My Account
+                  </h5>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Logout</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Order History</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >My Wishlist</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Track Order</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4 mt-3 mb-5">
+                  <h5
+                    class="text-uppercase font-weight-bold mb-3"
+                    style="font-size: 17px"
+                  >
+                    Useful Links
+                  </h5>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >About US</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Contact Us</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >How To Order</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Terms</a
+                    >
+                  </p>
+                  <p>
+                    <a href="#" style="text-decoration: none; color: lightgray"
+                      >Privacy Policy</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--FOOTER ENDS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

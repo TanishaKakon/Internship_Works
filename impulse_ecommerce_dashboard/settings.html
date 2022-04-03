@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!--Header nav start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" class="logo" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex container ms-4 me-4">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 d-flex mb-lg-0">
+            <li class="nav-item text-nowrap mt-2">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Arnob Rahee</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><img src="images/face.jpg" class="face"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--header nav ends-->
+
+    <!--Main Section Starts-->
+
+    <div class="container settings mt-5 mb-5">
+      <div class="row d-flex">
+        <div class="col-md-3 col-sm-12">
+          <ul class="nav flex-column text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active1" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar" href="order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar" href="track.html">Track Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sidebar" href="settings.html">Settings</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 col-sm-12">
+          <div class="row d-flex">
+            <div class="col-md-12">
+              <div class="password card">
+                <div class="card-header">
+                  <h4 class="font-weight-bold">Change Password</h4>
+                </div>
+                <div class="card-body">
+                  <form method="POST" action>
+                    <div class="form-content row d-flex">
+                      <label for="password" class="col-md-4 form-label"
+                        >Current Password</label
+                      >
+
+                      <div class="col-md-6">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          name="current_password"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-content row d-flex">
+                      <label for="password" class="col-md-4 form-label"
+                        >New Password</label
+                      >
+
+                      <div class="col-md-6">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          name="new_password"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-content row d-flex">
+                      <label for="password" class="col-md-4 form-label"
+                        >Confirm New Password</label
+                      >
+
+                      <div class="col-md-6">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          name="confirm_new_password"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-content row d-flex">
+                      <div class="col-md-4"></div>
+
+                      <div class="col-md-6">
+                        <button type="submit" class="btn btn-light">
+                          Update Password
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/2d456c507a.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

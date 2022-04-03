@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+/*.navbar-top {
+    background: #4D5061;
+    border-bottom: 4px solid #60B078;
+    color: #FFF;
+}
+
+.text-white{
+    color:#fff;
+}
+
+.navbar-doublerow > .navbar{
+	display: block;
+	padding: 0px auto;
+	margin: 0px auto;
+	min-height: 25px;
+}*/
+
+#home .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/*#home .container img{
+	filter: blur(2px);
+} */
+
+#home .container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home .container .centered h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+
+  text-shadow: 2px 2px 5px rgb(0 0 0 / 60%), -2px -2px 5px rgb(0 0 0 / 60%);
+  line-height: 60px;
+  margin-bottom: 0px;
+}
+
+#home .container .centered p {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+
+  text-shadow: 2px 2px 5px rgb(0 0 0 / 60%), -2px -2px 5px rgb(0 0 0 / 60%);
+}
+
+/*#home .container .row .col .card{
+	position: absolute;
+	z-index: 1;
+	margin-top: -60px;
+} */
+
+#alertbox .container .alert {
+  margin: auto;
+  width: 60%;
+  border: 1px solid blue;
+  background-color: #e3f2fd;
+  padding: 10px;
+}
+
+#sickness .container .row {
+  min-height: 100%;
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  /*border: 1px solid #3bafbf; */
+  flex-wrap: wrap;
+}
+
+#sickness .container .row .left-section {
+  flex: 40%;
+  height: 100%;
+}
+
+#sickness .container .row .right-section {
+  flex: 60%;
+  height: 100%;
+}
+
+#treatment .container .row {
+  min-height: 100%;
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  /*border: 1px solid #3bafbf;*/
+  flex-wrap: wrap;
+}
+
+#treatment .container .row .left-section {
+  flex: 40%;
+  height: 100%;
+}
+
+#treatment .container .row .right-section {
+  flex: 60%;
+  height: 100%;
+}
+
+#condition .container .human-pain-container {
+  width: 220px;
+  height: 530px;
+  background-image: url(images/human.png);
+  background-position: center center;
+  background-size: cover;
+  margin: auto;
+  position: relative;
+}
+
+#condition .container .human-pain-container .pain-point-head {
+  background-color: #fcba03;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+#condition .container .human-pain-container .pain-point-neck {
+  background-color: #b8124c;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 110px;
+}
+
+#condition .container .human-pain-container .pain-point-shoulder {
+  background-color: #5114c4;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+#condition .container .human-pain-container .pain-point-elbow {
+  background-color: #2fad51;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 150px;
+}
+
+#condition .container .human-pain-container .pain-point-back {
+  background-color: #124775;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 80px;
+}
+
+#condition .container .human-pain-container .pain-point-hand {
+  background-color: #bd1929;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 5px;
+}
+
+#condition .container .human-pain-container .pain-point-knee {
+  background-color: #1755a6;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 360px;
+  margin-left: 52px;
+}
+
+#condition .container .human-pain-container .pain-point-foot {
+  background-color: #182230;
+  width: 50px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 70%;
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 480px;
+  margin-left: 125px;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#equipments .container .row {
+  display: flex;
+}
+
+#equipments .container .row .col img {
+  flex: 25%;
+  padding: 2px;
+}
+
+#footer .container .copyright-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+}
+
+/*@media screen and (max-width: 767px){
+	#therapists .row img{
+		justify-content: center;
+
+	}
+} */
+
+@media screen and (max-width: 840px) {
+  #home .container img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  #sickness .container .row {
+    width: 100%;
+  }
+
+  #treatment .container .row {
+    width: 100%;
+  }
+
+  #therapists .container .row .col img {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #sickness .container .row {
+    width: 100%;
+  }
+}

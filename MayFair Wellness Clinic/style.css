@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+#home .container{
+	position: relative;
+    text-align: center;
+    color: white;
+}
+
+#home .container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home .container .centered h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 60%), -2px -2px 5px rgb(0 0 0 / 60%);
+    line-height: 60px;
+    margin-bottom: 0px;
+}
+
+#home .container .centered p{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 800;
+    
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 60%), -2px -2px 5px rgb(0 0 0 / 60%);
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{
+    font-family: 'Zilla Slab', serif;
+    display: table;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px #bbccbb;
+    overflow: hidden;
+}
+.vertical-tab .nav-tabs{
+    background: linear-gradient(#bbccbb, #fff);
+    display: table-cell;
+    width: 28%;
+    min-width: 28%;
+    min-height: 100%;
+    vertical-align: top;
+    border: none;
+    position: relative;
+}
+.vertical-tab .nav-tabs li{
+    float: none;
+    vertical-align: top;
+    position: relative;
+}
+.vertical-tab .nav-tabs li a{
+    color: #333;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: capitalize;
+    padding: 15px 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #000;
+    background-color: #fff;
+    border: none;
+}
+.vertical-tab .nav-tabs li a i{
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+.vertical-tab .tab-content{
+    color: #333;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    padding: 15px 15px 10px;
+    margin-top: 10px;
+    display: table-cell;
+    position: relative;
+}
+.vertical-tab .tab-content h3{
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 7px 0;
+}
+
+
+
+#condition .container .human-pain-container {
+	width: 220px;
+    height: 530px;
+    background-image: url(images/human.png);
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+}
+
+#condition .container .human-pain-container .pain-point-head {
+	background-color: #fcba03;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 90px;
+
+}
+
+#condition .container .human-pain-container .pain-point-neck {
+	background-color: #b8124c;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 110px;
+
+}
+
+#condition .container .human-pain-container .pain-point-shoulder {
+	background-color: #5114c4;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 30px;
+
+}
+
+#condition .container .human-pain-container .pain-point-elbow {
+	background-color: #2fad51;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 150px;
+
+}
+
+#condition .container .human-pain-container .pain-point-back {
+	background-color: #124775;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 80px;
+
+}
+
+#condition .container .human-pain-container .pain-point-hand {
+	background-color: #bd1929;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 5px;
+
+}
+
+#condition .container .human-pain-container .pain-point-knee {
+	background-color: #1755a6;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 52px;
+
+}
+
+#condition .container .human-pain-container .pain-point-foot {
+	background-color: #182230;
+	width: 50px;
+    height: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 70%;
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 125px;
+
+}
+
+
+/*a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}*/
+
+
+
+#equipments .container .row {
+	display: flex;
+}
+
+#equipments .container .row .col img{
+	flex: 25%;
+    padding: 2px;
+}
+
+
+@media screen and (max-width: 767px){
+	#therapists .row img{
+		justify-content: center;
+
+	}
+}

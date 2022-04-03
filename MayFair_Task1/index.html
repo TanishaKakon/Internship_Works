@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayfair Task 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.png"
+            class="d-block"
+            alt="logo"
+            width="100%"
+            height="70"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME BN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WHAT WE TREAT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                HOW WE TREAT
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Shock Wave Therapy</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Digital Traction</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ultrasound Therapy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Electrical Stimulation</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sports Physiotherapy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Hands-on Physiotherapy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SPECIALISTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ABOUT
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                <li><a class="dropdown-item" href="#">Board Members</a></li>
+                <li><a class="dropdown-item" href="#">Umma Salma</a></li>
+                <li><a class="dropdown-item" href="#">Murad Hossain</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <img src="img/banner.jpg" class="ban" alt="" />
+      <div
+        class="color-overlay d-sm-flex flex-column align-items-center justify-content-center"
+      >
+        <h1>MAYFAIR WELLNESS CLINIC</h1>
+        <p class="cen">
+          World-class Physiotherapy Clinic in Gulshan Avenue, Dhaka
+        </p>
+        <a class="btn btn-warning mt-3" href="#">BOOK YOUR APPOINTMENT</a>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">SAME DAY APPOINTMENT</h5>
+                <p class="card-text">
+                  Request a same day physiotherapy consultation appointment by
+                  completing our secure online appointment request form or
+                  directly call our office.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">EXPERT PHYSIOTHERAPIST</h5>
+                <p class="card-text">
+                  Our PTs are experts in operating advanced medical equipment &
+                  also covers the broad spectrum of manual techniques with years
+                  of experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-3">MODERN PT EQUIPMENT</h5>
+                <p class="card-text">
+                  Our practice is equipped with the advanced research-based
+                  medical technology that allows us to provide the most modern
+                  form of Physiotherapy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alertbox" class="pt-4">
+      <div class="container">
+        <div class="alert">
+          <p class="text-center py-2">
+            <span
+              ><i
+                class="fa-lg fa fa-check-circle"
+                aria-hidden="true"
+                style="color: #076e5c"
+              ></i
+            ></span>
+            <span class="text-center py-2" style="color: #076e5c"
+              >WE’VE BEEN TAKING ALL THE REQUIRED PROTECTIVE MEASURES AGAINST
+              THE NEW CORONAVIRUS TO RUN THE CLINIC AND TREAT OUR PATIENTS WITH
+              PROPER SAFETY</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sickness" class="p-5 bg-basic">
+      <div class="container">
+        <h2 class="text-center" style="color: #3bafbf">
+          PHYSIOTHERAPY TREATMENT
+        </h2>
+        <p class="text-center text-black mb-3">
+          At Mayfair Wellness Clinic, we help patients with many different
+          conditions. Please<br />
+          see the diagram below for information on common conditions we treat
+          and how our<br />
+          physical therapist can help you.
+        </p>
+        <p class="text-center" style="color: #dc3545">
+          Click Each Service Box To Learn More
+        </p>
+
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link active show"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-1"
+                >
+                  Back pain and Sciatica
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-2"
+                >
+                  Neck Pain
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-3"
+                >
+                  Shoulder Pain
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-4"
+                >
+                  Elbow, Wrist and hand Pain
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-5"
+                >
+                  Hip and Knee Pain
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-6"
+                >
+                  Arthritis
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-7"
+                >
+                  Foot and Ankle Pain
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-8"
+                >
+                  Sports Injuries
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-9"
+                >
+                  Work Injuries
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-10"
+                >
+                  Neurological Disorders
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-11"
+                >
+                  Pre & Post Surgical rehab
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-12"
+                >
+                  Urological Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane show active" id="tab-1">
+                <h5>Back Pain and Sciatica Relief</h5>
+                <img src="img/mayfair-back-pain.jpg" />
+                <p>
+                  Have you got a back injury that causes you pure agony? May be
+                  you have not just back pain but also other symptoms like pins
+                  and needles sensation in your back, buttocks, or legs. Back
+                  pain and the sciatic nerve disorder called sciatica are often
+                  connected, and they can come together to make your life
+                  absolutely miserable.
+                </p>
+                <p><b>What Causes Back Pain and Sciatic Nerve Pain?</b></p>
+                <ul>
+                  <li>Weight gain, including pregnancy related weight gain.</li>
+                  <li>Degenerative disc disease that occurs due to aging.</li>
+                  <li>
+                    Herniated disc, which can occur after an accident or injury
+                  </li>
+                  <li>Auto accidents</li>
+                  <li>Sports injuries</li>
+                </ul>
+                <p>
+                  No matter what the reason for the back pain and sciatica, your
+                  physical therapist is here to help you feel better.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-2">
+                <h5>Neck Pain Relief</h5>
+                <img src="img/Neck-Pain.jpg" />
+                <p>
+                  Do you dread having to look up, down, or to one side because
+                  of the pain you know you’ll experience? Do you struggle for
+                  hours to find a sleeping position that doesn’t torture your
+                  neck? Has your neck never been the same since that scary car
+                  crash or sports accident? Neck pain can make ordinary actions
+                  and tasks a major chore, ruining your quality of life.
+                </p>
+                <p><b>What Causes Neck Pain?</b></p>
+                <ul>
+                  <li>Bulging or herniated discs</li>
+                  <li>Osteoarthritis</li>
+                  <li>Poor posture</li>
+                  <li>Repetitive motion injuries</li>
+                  <li>Whiplash</li>
+                </ul>
+                <p>
+                  No matter what the reason for the back pain and sciatica, your
+                  physical therapist is here to help you feel better.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-3">
+                <h5>Shoulder Pain Relief</h5>
+                <img src="img/Shoulder-Pain.png" />
+                <p>
+                  Do you wince when you reach overhead, slip on a T-shirt, or
+                  roll over on your shoulder at night? If so, you probably know
+                  firsthand how debilitating and frustrating a shoulder pain
+                  condition can be. Whether you injured your shoulder in a
+                  recent accident, strained your shoulder by over-training, or
+                  simply are dealing with age-related shoulder joint
+                  dysfunction, you may find yourself struggling with day to day
+                  functions which you might have once taken for granted.
+                </p>
+                <p><b>What Causes Shoulder Pain?</b></p>
+                <ul>
+                  <li>Adhesive Capsulitis (Frozen Shoulder)</li>
+                  <li>Arthritis</li>
+                  <li>Inflammation and swelling of the bursae.</li>
+                  <li>
+                    The shoulder joint can become partially or fully dislocated
+                  </li>
+                  <li>Shoulder dislocation due to significant trauma</li>
+                  <li>Rotator Cuff Tendonitis and Shoulder Impingement</li>
+                  <li>SLAP tear</li>
+                </ul>
+                <p>
+                  If any of this sounds like you, our physical therapist team
+                  wants you to know that relief and resolutions (drug- and
+                  surgery-free!) are possible!
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-4">
+                <h5>Elbow, Wrist and Hand Pain Relief</h5>
+                <img src="img/Elbow-Wrist-Hand-Pain.png" />
+                <p>
+                  Do you often experience shooting pain in your wrist and hands
+                  when you try to type, drive, chop fruit, write your shopping
+                  list or play with your dog? Do your fingers sometimes go numb
+                  and tingle, making it hard to get a firm grip when you try to
+                  lift a grocery bag or briefcase? Does it hurt to bend your
+                  elbow? Do sharp wrist pains wake you up at night? If you’re
+                  losing sleep and having a hard time with daily tasks, get the
+                  relief by scheduling an appointment with our physical therapy
+                  team today.
+                </p>
+                <p><b>What Causes Hand, Wrist and Elbow Pain?</b></p>
+                <ul>
+                  <li>Bursitis</li>
+                  <li>Arthritis</li>
+                  <li>Carpal Tunnel Syndrome</li>
+                  <li>Cubital Tunnel Syndrome</li>
+                  <li>
+                    Sports, work and home injuries, or overuse from poor
+                    ergonomic movement
+                  </li>
+                </ul>
+                <p>
+                  You can get a proper diagnosis from your physical therapist to
+                  pinpoint the reason behind your pain, so an individualized
+                  physical therapy treatment plan can help you get pain-free
+                  function back in your hands.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-5">
+                <h5>Hip and Knee Pain Relief</h5>
+                <img src="img/Hip-and-Knee-Pain.jpg" />
+                <p>
+                  Your hips and knees experience the brute force of your body’s
+                  exertion. Day after day, as you go through your routine and
+                  push your body to complete the tasks you demand of it, you are
+                  putting endless amount of pressure on your hips and knees.<br />
+
+                  Hips and knee injuries are particularly difficult to recover
+                  from because providing these parts of your body with the rest
+                  they need to recover from an injury takes a lot of work.
+                </p>
+                <p><b>What Causes Hip and Knee Pain?</b></p>
+                <ul>
+                  <li>Arthritis</li>
+                  <li>Fractures</li>
+                  <li>Tendinitis</li>
+                </ul>
+                <p>
+                  So how can you overcome hip and knee pain, then? The answer is
+                  right in front of you: physical therapy.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-6">
+                <h5>Pain Relief for Arthritis</h5>
+                <img src="img/Arthritis.jpg" />
+                <p>
+                  Has getting in and out of your favorite chair become one of
+                  your least favorite activities? Do your joints feel decades
+                  older than the rest of you? Do you wish you could enjoy all
+                  your favorite activities without paying the price in pain and
+                  stiffness? If so, you’re probably one of with arthritis.
+                </p>
+                <p><b>What Causes Arthritis?</b></p>
+                <ul>
+                  <li>Reduction in the normal amount of cartilage tissue</li>
+                  <li>Infection or injury to the joints</li>
+                  <li>Autoimmune Disorder</li>
+                </ul>
+                <p>
+                  Drugs may promise temporary pain relief, but their risks and
+                  side effects can outweigh the limited benefits they provide
+                  for your aching joints. But there’s a way to obtain a
+                  healthier, more effective form of relief — by contacting our
+                  physical therapist today and scheduling a course of physical
+                  therapy.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-7">
+                <h5>Foot and Ankle Pain Relief</h5>
+                <img src="img/Foot-and-Ankle.jpg" />
+                <p>
+                  Do you find yourself missing out on many of your favorite
+                  activities due to foot and ankle pain? Has limping, hobbling,
+                  or simply staying off your feet replaced walking, jogging,
+                  dancing, or doing a day’s work? From soft tissue strains and
+                  degenerative joint problems to broken bones, problems
+                  afflicting the foot and/or ankle can put serious constraints
+                  on your life.
+                </p>
+                <p><b>What Causes Foot and Ankle pain?</b></p>
+                <ul>
+                  <li>Plantar fasciitis</li>
+                  <li>Arthritis</li>
+                  <li>Postural imbalances or excess weight</li>
+                  <li>Adhesions</li>
+                  <li>Nerve damage or impingement</li>
+                </ul>
+                <p>
+                  You don’t have to let your foot and ankle pain dictate your
+                  mobility and comfort. Physical therapy can get you back on
+                  your feet again, so contact our clinic to talk to our physical
+                  therapist about a personalized treatment plan!
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-8">
+                <h5>Sports Injuries Relief</h5>
+                <img src="img/Sports-Injuries.jpg" />
+                <p>
+                  Do you or someone in your household regularly participate in
+                  exercise, sports, or some other kind of physical activity?
+                  Have you sustained a sports injury as a result of your
+                  commitment to a healthy lifestyle? Is acute pain keeping you
+                  from competing, or is chronic pain affecting your performance?
+                  Our physical therapy team is here to help you get back in the
+                  game.
+                </p>
+                <p><b>What Causes Sports Injury?</b></p>
+                <ul>
+                  <li>Acute sports trauma</li>
+                  <li>Improper warm-ups and cooldowns</li>
+                  <li>Poor nutrition</li>
+                  <li>Poor technique and sports-specific movement mechanics</li>
+                  <li>Over-training and inadequate rest and recovery</li>
+                  <li>Poor sleep</li>
+                  <li>Imbalances in strength and flexibility</li>
+                  <li>Ill-fitting footwear and equipment</li>
+                  <li>
+                    Running and playing surfaces and the way you engage them
+                  </li>
+                </ul>
+                <p>
+                  Interested in healing naturally from a sports injury? Contact
+                  our physical therapy clinic today to get stronger, healthier,
+                  and pain-free, with a reduced risk of re-injury later in the
+                  season!.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-9">
+                <h5>Work Injuries Relief</h5>
+                <img src="img/Work-Injury.png" />
+                <p>
+                  Have you been injured while at work and are now struggling
+                  with pain or limited mobility? You spend a lot of time at
+                  work, probably doing the same things many times per day. If
+                  you’ve experienced a work-related injury contact our office to
+                  find out how physical therapy can help get you on the road to
+                  recovery!
+                </p>
+                <p><b>What Causes Work Injuries</b></p>
+
+                <p>
+                  When you’re at work there are often strict deadlines that have
+                  to be met and sometimes even more work than can be
+                  accomplished within the required time frame. This means people
+                  may rush, causing accidents to happen. When you combine too
+                  many repetitive motions with hectic schedules and the desire
+                  to prove yourself, it is a recipe for injury. There are
+                  several other specific causes of work-related injuries.
+                  Tripping, slipping, and falling often lead to injuries on the
+                  job. Sometimes distractions or overexertion will play a role
+                  in injuries as well.<br />
+
+                  Call us to find out how physical therapy can help you recover
+                  from a work-related injury.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-10">
+                <h5>Neurological Disorders Relief</h5>
+                <img src="img/Neurological-Disorders.jpg" />
+                <p>
+                  Neurological conditions are challenging and having a team of
+                  these specialists on your side is very beneficial. Studies
+                  have shown that physical therapy is very beneficial to those
+                  who suffer from neurological conditions.
+                </p>
+                <p><b>Neurological Conditions:</b></p>
+                <ul>
+                  <li>
+                    Our physical therapists specialize in neurology work with a
+                    wide range of patients who may have the following
+                    conditions:
+                  </li>
+                  <li>Parkinson’s disease</li>
+                  <li>Stroke</li>
+                  <li>Multiple sclerosis</li>
+                </ul>
+                <p>
+                  Our neurological physical therapists are specialized in the
+                  evaluation and treatment of individuals with movement
+                  difficulties due to an injury or disease of the nervous
+                  system.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-11">
+                <h5>Pre & Post Surgical Rehab</h5>
+                <img src="img/Post-Surgical-Rehab-.jpg" />
+                <p><b>Pre-Surgical-Rehab</b></p>
+                <p>
+                  If you are feeling a little concerned about how you will
+                  recover following surgery, you are not alone. Fortunately,
+                  there is a relatively new approach to physical therapy and
+                  surgery that is helping a lot of people recover faster and
+                  more fully. Pre-surgical rehab can make life after surgery
+                  easier. Our physical therapy team is here for all your pre-hab
+                  needs.
+                </p>
+                <p><b>Post-Surgical Rehab</b></p>
+
+                <p>
+                  Are you scheduled for an upcoming surgery and concerned about
+                  bouncing back from it well—or even hopeful that you’ll end up
+                  feeling stronger than before?<br />
+
+                  Our highly skilled and experienced team of physical therapy
+                  clinicians can guide you through the entire pre-surgical and
+                  post-surgical process so that you can maximize your outcomes
+                  and make the most out of any type of invasive procedure.
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+
+              <div class="tab-pane" id="tab-12">
+                <h5>Urological Conditions</h5>
+                <img src="img/Urological-Conditions.jpg" />
+                <p>
+                  <b
+                    >At Mayfair Wellness Clinic we, provide fast and effective
+                    treatment for different kinds of special urological
+                    conditions like:</b
+                  >
+                </p>
+                <ul>
+                  <li>Chronic Prostatitis</li>
+                  <li>Bacterial Prostatitis</li>
+                  <li>Peyronie’s Disease</li>
+                  <li>Benign Prostatic Hyperplasia</li>
+                  <li>Erectile Dysfunction</li>
+                </ul>
+                <p>
+                  By advance non-invasive method of Extracorporeal Shockwave
+                  Therapy
+                </p>
+                <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="btn btn-warning mt-3" href="#">BOOK YOUR APPOINTMENT</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

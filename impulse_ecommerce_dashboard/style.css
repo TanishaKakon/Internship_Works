@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme: #3e9150;
+}
+body {
+  background-color: rgb(244, 241, 241);
+  overflow-x: hidden;
+}
+
+/*===Header nav===*/
+.logo {
+  width: 90px;
+
+  object-fit: cover;
+}
+.face {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/*====Header Nav ends===*/
+
+/*===== profile container====*/
+.h-200 {
+  height: 80vh;
+}
+
+.active1 {
+  background-color: var(--theme);
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: white;
+}
+.active1:hover {
+  color: white;
+}
+.active1:focus {
+  color: white;
+}
+.sidebar {
+  background-color: rgb(129, 124, 124);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+}
+.sidebar:hover {
+  background-color: var(--theme);
+  padding-left: 20px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.sidebar:focus {
+  color: white;
+}
+.content {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 120px;
+  object-fit: cover;
+}
+.ct {
+  background-color: #3e9150;
+  height: 160px;
+  display: grid;
+  place-items: center;
+}
+.theme {
+  background-color: var(--theme);
+  color: white;
+}
+/*====Profile container ends===*/
+/*---FOR normal card items---*/
+.card {
+  border-radius: 0;
+}
+
+.card-header h4 {
+  color: rgb(129, 124, 124);
+}
+
+/*====ORDER CSS====*/
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table_search {
+  text-align: right;
+}
+
+.table_search label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.table_search input {
+  margin-left: 0.5rem;
+  display: inline-block;
+  width: auto;
+}
+
+@media screen and (max-width: 420px) {
+  .table_search {
+    text-align: center;
+  }
+}
+
+/*=== order css ends===*/
+
+/*====Settings css====*/
+.password .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  border: 1px solid #e3e6f0;
+  border-radius: 0.35rem;
+}
+form .form-content {
+  margin-bottom: 1rem;
+}
+.form-label {
+  text-align: right;
+}
+
+.form-content .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-content button {
+  background-color: #3e9150;
+  color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .form-label {
+    text-align: left;
+  }
+}
+
+/*===Settings Css ends===*/

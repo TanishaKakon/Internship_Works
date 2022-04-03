@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mayfair Wellness Clinic</title>
+    
+    <link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- NAV BAR -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" class="d-block w-100" alt="logo">
+			</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#">HOME EN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">HOME BN</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">WHAT WE TREAT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">HOW WE TREAT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">SPECIALISTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog">BLOG</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    
+    <!-- HOME -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <img src="images/cover1.jpg" class="img-fluid" alt="cover">
+            <div class="centered">
+              <h1 style="text-align: center;">MAYFAIR WELLNESS CLINIC</h1>
+                    <p>World-class Physiotherapy Clinic in Gulshan Avenue, Dhaka</p>
+                    <a class="btn btn-warning mt-3" href="#consultation">BOOK YOUR APPOINTMENT</a>
+			    
+                   
+            </div>    
+        </div>
+    </section>
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3">SAME DAY APPOINTMENT</h5>
+                <p class="card-text">
+                  Request a same day physiotherapy consultation appointment by completing our secure online appointment request form or directly call our office.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3">EXPERT PHYSIOTHERAPIST</h5>
+                <p class="card-text">
+                  Our PTs are experts in operating advanced medical equipment & also covers the broad spectrum of manual techniques with years of experience.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg mt-n3">
+            <div class="card bg-info text-light">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3">MODERN PT EQUIPMENT</h5>
+                <p class="card-text">
+                  Our practice is equipped with the advanced research-based medical technology that allows us to provide the most modern form of Physiotherapy.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHYSIOTHERAPY TREATMENT -->
+<!--    <section id="sickness" class="p-5 bg-basic">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">PHYSIOTHERAPY TREATMENT</h2>
+        <p class="lead text-center text-black mb-3">
+          At Mayfair Wellness Clinic, we help patients with many different conditions. Please<br> see the diagram below for information on common conditions we treat and how our<br> physical therapist can help you.
+        </p>
+        <p class="text-center" style="color: #dc3545;">Click Each Service Box To Learn More</p>
+
+        <div class="d-flex justify-content-center">
+         <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-back" type="button" role="tab" aria-controls="v-pills-back" aria-selected="true">Back Pain and Sciatica</button>
+
+            <button class="nav-link" id="v-pills-neck-tab" data-bs-toggle="pill" data-bs-target="#v-pills-neck" type="button" role="tab" aria-controls="v-pills-neck" aria-selected="false">Neck Pain</button>
+
+            <button class="nav-link" id="v-pills-shoulder-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shoulder" type="button" role="tab" aria-controls="v-pills-shoulder"aria-selected="false">Shoulder Pain</button>
+
+            <button class="nav-link" id="v-pills-elbow-tab" data-bs-toggle="pill" data-bs-target="#v-pills-elbow" type="button" role="tab" aria-controls="v-pills-elbow"aria-selected="false">Elbow, Wrist And Hand Pain</button>
+
+            <button class="nav-link" id="v-pills-hip-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hip" type="button" role="tab" aria-controls="v-pills-hip"aria-selected="false">Hip And Knee Pain</button>
+
+            <button class="nav-link" id="v-pills-arthritis-tab" data-bs-toggle="pill" data-bs-target="#v-pills-arthritis" type="button" role="tab" aria-controls="v-pills-arthritis"aria-selected="false">Arthritis</button>
+
+            <button class="nav-link" id="v-pills-foot-tab" data-bs-toggle="pill" data-bs-target="#v-pills-foot" type="button" role="tab" aria-controls="v-pills-foot"aria-selected="false">Foot And Ankle Pain</button>
+
+            <button class="nav-link" id="v-pills-sports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sports" type="button" role="tab" aria-controls="v-pills-sports"aria-selected="false">Sports Injuries</button>
+
+            <button class="nav-link" id="v-pills-work-tab" data-bs-toggle="pill" data-bs-target="#v-pills-work" type="button" role="tab" aria-controls="v-pills-work"aria-selected="false">Work Injuries</button>
+
+            <button class="nav-link" id="v-pills-neuro-tab" data-bs-toggle="pill" data-bs-target="#v-pills-neuro" type="button" role="tab" aria-controls="v-pills-neuro"aria-selected="false">Neurological Disorders</button>
+
+            <button class="nav-link" id="v-pills-rehab-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rehab" type="button" role="tab" aria-controls="v-pills-rehab"aria-selected="false">Pre & Post Surgical Rehab</button>
+
+            <button class="nav-link" id="v-pills-urology-tab" data-bs-toggle="pill" data-bs-target="#v-pills-urology" type="button" role="tab" aria-controls="v-pills-urology"aria-selected="false">Urological Conditions</button>
+
+            <button class="nav-link" id="v-pills-women-tab" data-bs-toggle="pill" data-bs-target="#v-pills-women" type="button" role="tab" aria-controls="v-pills-women"aria-selected="false">Women's Health</button>
+          </div>
+          
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-back" role="tabpanel" aria-labelledby="v-pills-back-tab">
+              <h5>Back Pain and Sciatica Relief</h5>
+              <img src="images/mayfair-back-pain.jpg">
+              <p>Have you got a back injury that causes you pure agony? May be you have not just back pain but also other symptoms like pins and needles sensation in your back, buttocks, or legs. Back pain and the sciatic nerve disorder called sciatica are often connected, and they can come together to make your life absolutely miserable.</p>
+              <p>What Causes Back Pain and Sciatic Nerve Pain?</p>
+              <ul>
+                <li>Weight gain, including pregnancy related weight gain.</li>
+                <li>Degenerative disc disease that occurs due to aging.</li>
+                <li>Herniated disc, which can occur after an accident or injury</li>
+                <li>Auto accidents</li>
+                <li>Sports injuries</li>
+              </ul>
+              <p>No matter what the reason for the back pain and sciatica, your physical therapist is here to help you feel better.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-neck" role="tabpanel" aria-labelledby="v-pills-neck-tab">
+              <h5>Neck Pain Relief</h5>
+              <img src="images/Neck-Pain.jpg">
+              <p>Do you dread having to look up, down, or to one side because of the pain you know you’ll experience? Do you struggle for hours to find a sleeping position that doesn’t torture your neck? Has your neck never been the same since that scary car crash or sports accident? Neck pain can make ordinary actions and tasks a major chore, ruining your quality of life.</p>
+              <p>What Causes Neck Pain?</p>
+              <ul>
+                <li>Bulging or herniated discs</li>
+                <li>Osteoarthritis</li>
+                <li>Poor posture</li>
+                <li>Repetitive motion injuries</li>
+                <li>Whiplash</li>
+              </ul>
+              <p>No matter what the reason for the back pain and sciatica, your physical therapist is here to help you feel better.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+            <div class="tab-pane fade" id="v-pills-shoulder" role="tabpanel" aria-labelledby="v-pills-shoulder-tab">
+            <h5>Shoulder Pain Relief</h5>
+              <img src="images/Shoulder-Pain.png">
+              <p>Do you wince when you reach overhead, slip on a T-shirt, or roll over on your shoulder at night? If so, you probably know firsthand how debilitating and frustrating a shoulder pain condition can be. Whether you injured your shoulder in a recent accident, strained your shoulder by over-training, or simply are dealing with age-related shoulder joint dysfunction, you may find yourself struggling with day to day functions which you might have once taken for granted.</p>
+              <p>What Causes Shoulder Pain?</p>
+              <ul>
+                <li>Adhesive Capsulitis (Frozen Shoulder)</li>
+                <li>Arthritis</li>
+                <li>Inflammation and swelling of the bursae.</li>
+                <li>The shoulder joint can become partially or fully dislocated</li>
+                <li>Shoulder dislocation due to significant trauma</li>
+                <li>Rotator Cuff Tendonitis and Shoulder Impingement</li>
+                <li>SLAP tear</li>
+              </ul>
+              <p>If any of this sounds like you, our physical therapist team wants you to know that relief and resolutions (drug- and surgery-free!) are possible!</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-elbow" role="tabpanel" aria-labelledby="v-pills-elbow-tab">
+             <h5>Elbow, Wrist and Hand Pain Relief</h5>
+              <img src="images/Elbow-Wrist-Hand-Pain.png">
+              <p>Do you often experience shooting pain in your wrist and hands when you try to type, drive, chop fruit, write your shopping list or play with your dog? Do your fingers sometimes go numb and tingle, making it hard to get a firm grip when you try to lift a grocery bag or briefcase? Does it hurt to bend your elbow? Do sharp wrist pains wake you up at night? If you’re losing sleep and having a hard time with daily tasks, get the relief by scheduling an appointment with our physical therapy team today.</p>
+              <p>What Causes Hand, Wrist and Elbow Pain?</p>
+              <ul>
+                <li>Bursitis</li>
+                <li>Arthritis</li>
+                <li>Carpal Tunnel Syndrome</li>
+                <li>Cubital Tunnel Syndrome</li>
+                <li>Sports, work and home injuries, or overuse from poor ergonomic movement</li>
+                
+              </ul>
+              <p>You can get a proper diagnosis from your physical therapist to pinpoint the reason behind your pain, so an individualized physical therapy treatment plan can help you get pain-free function back in your hands.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-hip" role="tabpanel" aria-labelledby="v-pills-hip-tab">
+              <h5>Hip and Knee Pain Relief</h5>
+              <img src="images/Hip-and-Knee-Pain.jpg">
+              <p>Your hips and knees experience the brute force of your body’s exertion. Day after day, as you go through your routine and push your body to complete the tasks you demand of it, you are putting endless amount of pressure on your hips and knees.<br>
+
+              Hips and knee injuries are particularly difficult to recover from because providing these parts of your body with the rest they need to recover from an injury takes a lot of work.</p>
+              <p>What Causes Hip and Knee Pain?</p>
+              <ul>
+                
+                <li>Arthritis</li>
+                <li>Fractures</li>
+                <li>Tendinitis</li>
+                
+                
+              </ul>
+              <p>So how can you overcome hip and knee pain, then? The answer is right in front of you: physical therapy.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-arthritis" role="tabpanel" aria-labelledby="v-pills-arthritis-tab">
+              <h5>Pain Relief for Arthritis</h5>
+              <img src="images/Arthritis.jpg">
+              <p>Has getting in and out of your favorite chair become one of your least favorite activities? Do your joints feel decades older than the rest of you? Do you wish you could enjoy all your favorite activities without paying the price in pain and stiffness? If so, you’re probably one of with arthritis.</p>
+              <p>What Causes Arthritis?</p>
+              <ul>
+                
+                <li>Reduction in the normal amount of cartilage tissue</li>
+                <li>Infection or injury to the joints</li>
+                <li>Autoimmune Disorder</li>
+                
+                
+              </ul>
+              <p>Drugs may promise temporary pain relief, but their risks and side effects can outweigh the limited benefits they provide for your aching joints. But there’s a way to obtain a healthier, more effective form of relief — by contacting our physical therapist today and scheduling a course of physical therapy.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-foot" role="tabpanel" aria-labelledby="v-pills-foot-tab">
+              <h5>Foot and Ankle Pain Relief</h5>
+              <img src="images/Foot-and-Ankle.jpg">
+              <p>Do you find yourself missing out on many of your favorite activities due to foot and ankle pain? Has limping, hobbling, or simply staying off your feet replaced walking, jogging, dancing, or doing a day’s work? From soft tissue strains and degenerative joint problems to broken bones, problems afflicting the foot and/or ankle can put serious constraints on your life.</p>
+              <p>What Causes Foot and Ankle pain?</p>
+              <ul>
+                
+                <li>Plantar fasciitis</li>
+                <li>Arthritis</li>
+                <li>Postural imbalances or excess weight</li>
+                <li>Adhesions</li>
+                <li>Nerve damage or impingement</li>
+                
+                
+              </ul>
+              <p>You don’t have to let your foot and ankle pain dictate your mobility and comfort. Physical therapy can get you back on your feet again, so contact our clinic to talk to our physical therapist about a personalized treatment plan!</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-sports" role="tabpanel" aria-labelledby="v-pills-sports-tab">
+              <h5>Sports Injuries Relief</h5>
+              <img src="images/Sports-Injuries.jpg">
+              <p>Do you or someone in your household regularly participate in exercise, sports, or some other kind of physical activity? Have you sustained a sports injury as a result of your commitment to a healthy lifestyle? Is acute pain keeping you from competing, or is chronic pain affecting your performance? Our physical therapy team is here to help you get back in the game.</p>
+              <p>What Causes Sports Injury?</p>
+              <ul>
+                
+                <li>Acute sports trauma</li>
+                <li>Improper warm-ups and cooldowns</li>
+                <li>Poor nutrition</li>
+                <li>Poor technique and sports-specific movement mechanics</li>
+                <li>Over-training and inadequate rest and recovery</li>
+                <li>Poor sleep</li>
+                <li>Imbalances in strength and flexibility</li>
+                <li>Ill-fitting footwear and equipment</li>
+                <li>Running and playing surfaces and the way you engage them</li>
+                
+                
+              </ul>
+              <p>Interested in healing naturally from a sports injury? Contact our physical therapy clinic today to get stronger, healthier, and pain-free, with a reduced risk of re-injury later in the season!.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-work" role="tabpanel" aria-labelledby="v-pills-work-tab">
+              <h5>Work Injuries Relief</h5>
+              <img src="images/Work-Injury.png">
+              <p>Have you been injured while at work and are now struggling with pain or limited mobility? You spend a lot of time at work, probably doing the same things many times per day. If you’ve experienced a work-related injury contact our office to find out how physical therapy can help get you on the road to recovery!</p>
+              <p>What Causes Work Injuries</p>
+              
+              <p>When you’re at work there are often strict deadlines that have to be met and sometimes even more work than can be accomplished within the required time frame. This means people may rush, causing accidents to happen. When you combine too many repetitive motions with hectic schedules and the desire to prove yourself, it is a recipe for injury. There are several other specific causes of work-related injuries. Tripping, slipping, and falling often lead to injuries on the job. Sometimes distractions or overexertion will play a role in injuries as well.<br>
+
+              Call us to find out how physical therapy can help you recover from a work-related injury.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-neuro" role="tabpanel" aria-labelledby="v-pills-neuro-tab">
+               <h5>Neurological Disorders Relief</h5>
+              <img src="images/Neurological-Disorders.jpg">
+              <p>Neurological conditions are challenging and having a team of these specialists on your side is very beneficial. Studies have shown that physical therapy is very beneficial to those who suffer from neurological conditions.</p>
+              <p>Neurological Conditions:</p>
+              <ul>
+                
+                <li>Our physical therapists specialize in neurology work with a wide range of patients who may have the following conditions:</li>
+                <li>Parkinson’s disease</li>
+                <li>Stroke</li>
+                <li>Multiple sclerosis</li>
+                
+                
+                
+              </ul>
+              <p>Our neurological physical therapists are specialized in the evaluation and treatment of individuals with movement difficulties due to an injury or disease of the nervous system.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-rehab" role="tabpanel" aria-labelledby="v-pills-rehab-tab">
+               <h5>Pre & Post Surgical Rehab</h5>
+              <img src="images/Post-Surgical-Rehab-.jpg">
+              <p><b>Pre-Surgical-Rehab</b></p>
+              <p>If you are feeling a little concerned about how you will recover following surgery, you are not alone. Fortunately, there is a relatively new approach to physical therapy and surgery that is helping a lot of people recover faster and more fully. Pre-surgical rehab can make life after surgery easier. Our physical therapy team is here for all your pre-hab needs.</p>
+              <p><b>Post-Surgical Rehab</b></p>
+              
+              <p>Are you scheduled for an upcoming surgery and concerned about bouncing back from it well—or even hopeful that you’ll end up feeling stronger than before?<br>
+
+              Our highly skilled and experienced team of physical therapy clinicians can guide you through the entire pre-surgical and post-surgical process so that you can maximize your outcomes and make the most out of any type of invasive procedure.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-urology" role="tabpanel" aria-labelledby="v-pills-urology-tab">
+               <h5>Urological Conditions</h5>
+              <img src="images/Urological-Conditions.jpg">
+              <p><b>At Mayfair Wellness Clinic we, provide fast and effective treatment for different kinds of special urological conditions like:</b></p>
+              <ul>
+                
+                <li>Chronic Prostatitis</li>
+                <li>Bacterial Prostatitis</li>
+                <li>Peyronie’s Disease</li>
+                <li>Benign Prostatic Hyperplasia</li>
+                <li>Erectile Dysfunction</li>
+                
+                
+                
+              </ul>
+              <p>By advance non-invasive method of Extracorporeal Shockwave Therapy</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-women" role="tabpanel" aria-labelledby="v-pills-women-tab">
+               <h5>Women’s Health</h5>
+              <img src="images/Women-Health.jpg">
+              <p><b>At Mayfair Wellness Clinic, we provide fast and effective treatment for different kinds of special gynecological conditions like:</b></p>
+              <ul>
+                
+                <li>Urinary Incontinence (Stress, Urge, Mixed)</li>
+                <li>Dysmenorrhea/Pain During Menstruation</li>
+                <li>Dyspareunia/Pain During Sexual Intercourse</li>
+                <li>Post Menopausal Symptom</li>
+                <li>Post Surgical Condition (Breast & Uterus Surgery)</li>
+                <li>Pelvic Organ Prolapse (Uterine Prolapse)</li>
+                <li>Pregnancy</li>
+                
+                
+                
+              </ul>
+              <p>So don’t suffer, contact us, get cured and lead a healthy, fit and happy life.</p>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+            </div>
+
+          </div>
+         </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section> -->
+
+
+    <section id="sickness" class="p-5 bg-basic">
+      <div class="container">
+        <h2 class="text-center text-blue">PHYSIOTHERAPY TREATMENT</h2>
+        <p class="lead text-center text-black mb-3">
+          At Mayfair Wellness Clinic, we help patients with many different conditions. Please<br> see the diagram below for information on common conditions we treat and how our<br> physical therapist can help you.
+        </p>
+        <p class="text-center" style="color: #dc3545;">Click Each Service Box To Learn More</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="vertical-tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <h3>Section 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Section 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Section 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+
+    <hr />
+
+    <!-- HUMAN PAIN FIGURE -->
+    <section id="condition" class="p-5 bg-basic">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">WE TREAT YOUR UNIQUE CONDITION</h2>
+        <p class="lead text-center text-black mb-3">
+          Don’t let pain stand in the way of doing what you love. Consult with our expert<br> physiotherapists to help you live a better life!
+        </p>
+        <p class="text-center" style="color: #dc3545;">Click on the body part that is causing you pain</p>
+        <div class="human-pain-container">
+          <!--<div class="pain-point pain-head" data-toggle="modal" data-target="#modal-head-and-neck">
+            <div class="tips">Head</div>
+          </div> -->
+          <button type="button" class="pain-point-head" data-bs-toggle="modal" data-bs-target="#modal-head">
+          Head
+          </button>
+
+          <button type="button" class="pain-point-neck" data-bs-toggle="modal" data-bs-target="#modal-neck">
+          Neck
+          </button>
+
+          <button type="button" class="pain-point-shoulder" data-bs-toggle="modal" data-bs-target="#modal-shoulder">
+          Shoulder
+          </button>
+
+          <button type="button" class="pain-point-elbow" data-bs-toggle="modal" data-bs-target="#modal-elbow">
+          Elbow
+          </button>
+
+          <button type="button" class="pain-point-back" data-bs-toggle="modal" data-bs-target="#modal-back">
+          Back
+          </button>
+
+          <button type="button" class="pain-point-hand" data-bs-toggle="modal" data-bs-target="#modal-hand">
+          Hand
+          </button>
+
+          <button type="button" class="pain-point-knee" data-bs-toggle="modal" data-bs-target="#modal-knee">
+          Knee
+          </button>
+
+          <button type="button" class="pain-point-foot" data-bs-toggle="modal" data-bs-target="#modal-foot">
+          Foot
+          </button>
+
+
+
+          <div class="modal fade" id="modal-head" tabindex="-1" aria-labelledby="headModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                 <div class="modal-header" style="background-color: #2a91eb;">
+                    <h5 class="modal-title text-white" id="headModalLabel">Head</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different head-related conditions. Please see the list below to learn the common conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Cervicogenic Headache</li>
+                     <li>Facial Paralysis</li>
+                     <li>Bell’s Palsy</li>
+                     <li>Headaches and Migraines</li>
+                     <li>Radiating Pain</li>
+                     <li>Poor Posture and Forward Head Syndrome</li>
+                     <li>Post-surgery Rehab</li>
+                     <li>Temporomandibular Joint Dysfunction (TMD Or TMJ)</li>
+                     <li>Vertigo and Dizziness</li>
+                     <li>Herniated or Bulging Disc</li>
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Our trained physical therapists examine many different factors that can be adding to the causes of your head-related issue. We work with you as a team to help you recover and relieve your pain and return you to activities as soon as possible.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-neck" tabindex="-1" aria-labelledby="neckModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="neckModalLabel">Neck</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different neck-related conditions. Please see the list below to learn the common neck conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Neck Pain</li>
+                     <li>Alignment Problem</li>
+                     <li>Improper Movement</li>
+                     <li>Strength Issue</li>
+                     <li>Stability Issue</li>
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Our physical therapists perform a thorough evaluation of your neck to determine your range of motion, strength, posture, and alignment. Sometimes, where the pain is occurring, is not the source of the problem. Often a limitation in movement above or below the painful area is causing excessive pressure or poor function of the painful area. With gentle hands-on therapy, special exercises and modalities such as ultrasound or electrical stimulation, we can relieve your pain, restore motion and get you back to activities quickly without neck pain.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-shoulder" tabindex="-1" aria-labelledby="shoulderModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="shoulderModalLabel">Shoulder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, Our physical therapists work with many shoulder patients to reduce pain quickly and restore range of motion to the shoulder. Please see the list below to learn the common shoulder conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Fractures</li>
+                     <li>Post-surgery Rehab</li>
+                     <li>Bursitis / Tendonitis</li>
+                     <li>Sports Injuries</li>
+                     <li>Rotator Cuff Injuries</li>
+                     <li>Frozen Shoulder / Adhesive Capsulitis</li>
+                     <li>Labrum Tear</li>
+                     <li>Dislocation, Instability</li>
+                     <li>Shoulder Pain</li>
+                     <li>Sprain / Strain</li>
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Physical therapy is a very important part of rehabilitation after a shoulder treatment. Whether you are a young person or older, we work closely with you to make sure your shoulder issue is protected while it heals. We then work closely with you to gradually restore your range of motion, relieve pain, soothe aching muscles and improve your strength.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-elbow" tabindex="-1" aria-labelledby="elbwModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="elbowModalLabel">Elbow</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different elbow conditions. Please see the list below to learn the common elbow conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Elbow Pain, Wrist Pain, Hand Pain</li>
+                     <li>Tennis and Golfer’s Elbow</li>
+                     <li>Nerve Injuries</li>
+                     <li>Carpal Tunnel Syndrome</li>
+                     <li>Tendon Repair & Post-surgery Rehab</li>
+                     <li>Sprain / Strain</li>
+                     
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Our physical therapy helps you to relieve elbow pain, wrist pain, and hand pain by examining the mechanics of your joints and muscles. By identifying where you are having limitations, analyzing your daily activities and strength of certain muscle groups, the root cause of your pain can be discovered.<br>
+
+                   A comprehensive plan is then built to improve your range of motion, reduce your pain quickly, soothe stiff and sore muscles and return your strength. In addition, we work with you to educate you on techniques and exercises to prevent future injury or possibly adapt to your work environment.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-back" tabindex="-1" aria-labelledby="backModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="backModalLabel">Back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different back pain conditions. Please see the list below to learn the common back pain conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Sprain / Strain</li>
+                     <li>Low Back Pain</li>
+                     <li>Mid Back Pain</li>
+                     <li>Sciatica and Radiating Pain</li>
+                     <li>Spinal Arthritis and Spinal Stenosis</li>
+                     <li>Herniated or Bulging Disc</li>
+                     <li>Osteoporosis</li>
+                     <li>Spondylolisthesis</li>
+                     <li>Compression Fractures</li>
+                     <li>Degenerative Diseases</li>
+                     <li>Post-surgery Rehab</li>
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Physical therapy is one of the best choices to treat back pain. By addressing the main issue, your normal back movement and strength can be restored. Our physical therapists focus on your posture, spinal mobility, strength, flexibility and the way you move your body. As we observe and measure these indicators, we can detect weak areas and evaluate where your primary problem is coming from.<br>
+
+                   A thorough plan is then worked out to address your core issues and relieve your low back pain quickly. This allows you to have fast pain relief, improving your spinal range of motion and body strength. We also focus on prevention of future injuries and educate you on proper poster and body mechanic techniques.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-hand" tabindex="-1" aria-labelledby="handModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="handModalLabel">Wrist and Hand</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different wrist and hand conditions. Please see the list below to learn the common wrist and hand conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Fractures</li>
+                     <li>Colles’ Fractures</li>
+                     <li>Scaphoid Fractures</li>
+                     <li>Sports Injuries</li>
+                     <li>Rotator Cuff Injuries</li>
+                     <li>Frozen Shoulder / Adhesive Capsulitis</li>
+                     <li>Labrum Tear</li>
+                     <li>Dislocation, Instability</li>
+                     <li>Shoulder Pain</li>
+                     <li>Sprain / Strain</li>
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>During the healing phase typically in a cast or after surgery, the fingers, wrist and elbow become very stiff, range of motion and strength are lost. Physical therapy is very important in the rehabilitative process to help you regain normal range of motion, reduce swelling, resolve pain and regain function of your hand and wrist.<br>
+
+                  Physical therapy is gentle and will help you quickly resolve your pain and restore your function. With physical therapy, you can make a complete recovery quickly and safely.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-knee" tabindex="-1" aria-labelledby="kneeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="kneeModalLabel">Knee, balance and Walking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different knee balance and walking conditions. Please see the list below to learn the common knee balance and walking conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Sprain / Strain</li>
+                     <li>Meniscus Injury</li>
+                     <li>Tendonitis</li>
+                     <li>Anterior Cruciate Ligament (ACL) Tears</li>
+                     <li>Posterior Cruciate Ligament (PCL) Tears</li>
+                     <li>Medial Collateral Ligament (MCL) Tears</li>
+                     <li>Lateral Collateral Ligament (LCL) Tears</li>
+                     <li>Total Knee Replacement</li>
+                     <li>Poor Balance / Risk of Falling</li>
+                     <li>Knee Pain</li>
+                     <li>Post-surgery Rehab</li>
+                     <li>Difficulty Walking</li>
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>In most cases, physical therapy can effectively help you recover from a knee balance and walking issues. We first evaluate the injured area to determine the extent of the injury and ensure that the ligaments or tendons are still intact. After we pinpoint the injured area, we formulate a treatment plan that will quickly relieve your pain and begin restoring the range of motion.<br>
+
+                   The goal of physical therapy is to restore your normal range of motion and eventually restore normal strength.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal-foot" tabindex="-1" aria-labelledby="footModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="footModalLabel">Foot and Ankle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <p>At Mayfair Wellness Clinic, we help patients with many different foot and ankle conditions. Please see the list below to learn the common foot and ankle conditions we treat and how our physical therapy can help you live a better life.</p>
+                   <ul>
+                     <li>Fractures</li>
+                     <li>Sprain / Strain</li>
+                     <li>Post-surgery Rehab</li>
+                     <li>Instability</li>
+                     <li>Plantar Fasciitis</li>
+                     <li>Achilles Tendonitis</li>
+                     
+                     
+                   </ul>
+                   <p><b>How Physical Therapy Helps</b></p>
+                   <p>Physical therapy is very important in the rehabilitative process to help you regain normal range of motion, reduce swelling, resolve pain and regain function of your ankle and foot.<br>
+
+                   Physical therapy is gentle and will help you quickly resolve your pain and restore your function. Improvement in range of motion, strength, stability, walking and running will occur. With physical therapy, you can make a complete recovery quickly and safely.</p>
+                   <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+        
+                 </div>
+                 
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- TREATMENT PROCEDURE -->
+<!--    <section id="treatment" class="p-5" style="background-color: #e3f2fd;">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">HOW WE TREAT</h2>
+        <p class="lead text-center text-black mb-3">
+          At Mayfair Wellness Clinic, we offer a unique blend of expertise and 1-on-1 patient<br>-centered care for men, women, and children in all stages of life and health.
+        </p>
+        <p class="text-center" style="color: #dc3545;">Click Each Service Box To Learn More</p>
+
+        <div class="d-flex justify-content-center">
+         <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-physio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-physio" type="button" role="tab" aria-controls="v-pills-physio" aria-selected="true">Physiotherapy Treatments</button>
+
+            <button class="nav-link" id="v-pills-shock-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shock" type="button" role="tab" aria-controls="v-pills-shock" aria-selected="false">Shock Wave Therapy</button>
+
+            <button class="nav-link" id="v-pills-laser-tab" data-bs-toggle="pill" data-bs-target="#v-pills-laser" type="button" role="tab" aria-controls="v-pills-laser"aria-selected="false">High Intensity Laser Therapy</button>
+
+            <button class="nav-link" id="v-pills-ultra-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ultra" type="button" role="tab" aria-controls="v-pills-ultra"aria-selected="false">Ultrasound Therapy</button>
+
+            <button class="nav-link" id="v-pills-handsultra-tab" data-bs-toggle="pill" data-bs-target="#v-pills-handsultra" type="button" role="tab" aria-controls="v-pills-handsultra"aria-selected="false">Hands Free Ultra Sound</button>
+
+            <button class="nav-link" id="v-pills-stimulate-tab" data-bs-toggle="pill" data-bs-target="#v-pills-stimulate" type="button" role="tab" aria-controls="v-pills-stimulate"aria-selected="false">Electrical Stimulation</button>
+
+            <button class="nav-link" id="v-pills-traction-tab" data-bs-toggle="pill" data-bs-target="#v-pills-traction" type="button" role="tab" aria-controls="v-pills-traction"aria-selected="false">Digital Traction</button>
+
+            <button class="nav-link" id="v-pills-handsphysio-tab" data-bs-toggle="pill" data-bs-target="#v-pills-handsphysio" type="button" role="tab" aria-controls="v-pills-handsphysio"aria-selected="false">Hands-on Physiotherapy</button>
+
+            <button class="nav-link" id="v-pills-exercise-tab" data-bs-toggle="pill" data-bs-target="#v-pills-exercise" type="button" role="tab" aria-controls="v-pills-exercise"aria-selected="false">Therapeutic Exercises</button>
+
+            <button class="nav-link" id="v-pills-biomech-tab" data-bs-toggle="pill" data-bs-target="#v-pills-biomech" type="button" role="tab" aria-controls="v-pills-biomech"aria-selected="false">Bio Mechanical Analysis</button>
+
+            
+          </div>
+          
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-physio" role="tabpanel" aria-labelledby="v-pills-physio-tab">
+              <h5>Our Physiotherapy Treatments</h5>
+              
+              <p>Best physiotherapy treatment in Dhaka.</p>
+              <p><b>Equipment Based Physiotherapy Treatment:</b></p>
+              <ul>
+                <li>Extracorporeal Shockwave Therapy</li>
+                <li>High Intensity LASER Therapy</li>
+                <li>Ultrasound therapy</li>
+                <li>Electrical stimulation</li>
+                <li>Digital Traction Therapy</li>
+                <li>Infrared Radiation</li>
+              </ul>
+              <p><b>Manual/Hands-on Physiotherapy Treatment:</b></p>
+              <ul>
+                <li>Joint mobilization or gliding techniques</li>
+                <li>Joint manipulation</li>
+                <li>Muscle energy techniques</li>
+                <li>Stretching exercises</li>
+                <li>Strengthening exercises</li>
+                <li>Breathing exercises</li>
+                <li>Balance and coordination exercises</li>
+                <li>Neurodynamics</li>
+                <li>Myofacsial release</li>
+                <li>Deep transverse friction</li>
+                <li>Tapping</li>
+              </ul>
+              <p><a href="#consultation">BOOK YOUR APPOINTMENT</a></p>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-shock" role="tabpanel" aria-labelledby="v-pills-shock-tab">
+              <h5>Shock Wave Therapy</h5>
+              <img src="images/th33.jpg">
+              <p>Shock wave therapy is an advanced modality that is used for chronic pain management as a non-invasive treatment that involves creating a series of low energy acoustic wave pulsations. Where other modalities fail in pain-relieving shock wave therapy works there magically.</p>
+              
+              <ul>
+                <li>Highly effective non-invasive treatment</li>
+                <li>Fast relief of pain & mobility restoration</li>
+                <li>Decrease muscle tension & muscle spasm</li>
+                <li>Has a very short treatment time per session</li>
+                <li>Very High percentage of therapy success rates</li>
+                <li>Fast healing by increasing collagen production, improving metabolism & microcirculation</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-laser" role="tabpanel" aria-labelledby="v-pills-laser-tab">
+              <h5>High Intensity Laser Therapy</h5>
+              <img src="images/th2.jpg">
+              <p>It’s a recent modality of physiotherapy for pain-relieving & stands for Light Amplification by Stimulated Emission of Radiation which penetrates deeply (up to 12 cm), works on blood vessels and improves healing mechanism.</p>
+              
+              <ul>
+                <li>Reduce pain & inflammation without side effects</li>
+                <li>Effective for tissue improvement by photo bioactivation</li>
+                <li>Help wound & fracture healing</li>
+                <li>Fast & Effective Physiotherapy</li>
+                <li>High Standard of Services</li>
+                
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-ultra" role="tabpanel" aria-labelledby="v-pills-ultra-tab">
+              <h5>Ultrasound Therapy</h5>
+              <img src="images/th33.jpg">
+              <p>Ultrasound therapy is considered as a deep heating modality using ultrasound waves of high-frequency vibration in the tissue (micro-massage) using both thermal and non-thermal effects.</p>
+              
+              <ul>
+                <li>Improve tissue quality</li>
+                <li>Relief pain</li>
+                <li>Relax muscle spasm</li>
+                <li>Reduce joint contracture</li>
+                <li>High standard of services</li>
+                <li>Comprehensive care</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-handsultra" role="tabpanel" aria-labelledby="v-pills-handsultra-tab">
+              <h5>Hands Free Ultra Sound Therapy</h5>
+              <img src="images/th33.jpg">
+              <p>Hands-Free Ultra Sound is a Breakthrough in Ultrasound therapy. It added a new dimension in physiotherapy treatment.</p>
+              
+              <ul>
+                <li>Very effective treatment.</li>
+                <li>Saves operator’s time.</li>
+                <li>High standard of services</li>
+                <li>Comprehensive care</li>
+                
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-stimulate" role="tabpanel" aria-labelledby="v-pills-stimulate-tab">
+              <h5>Electrical Stimulation Therapy</h5>
+              <img src="images/th33.jpg">
+              <p>Electrical simulator gives good results for acute and chronic pain by a technique of neuromodulation that affects the sensory pathway by modifying the impulse which leads to relief of pain.</p>
+              
+              <ul>
+                <li>Improve sensory and motor function</li>
+                <li>Reduce neurological pain</li>
+                <li>Improve neuro degeneration</li>
+                <li>Facilitate muscle re-education</li>
+                <li>Improve muscle strength</li>
+                <li>Facilitate repair of muscle & other body tissue</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-traction" role="tabpanel" aria-labelledby="v-pills-traction-tab">
+              <h5>Digital Traction Therapy</h5>
+              <img src="images/th33.jpg">
+              <p>Digital Traction is the use of pulling force to treat muscle and skeletal disorders by maintaining pulling weight range.</p>
+              
+              <ul>
+                <li>Helps reduction of pressure inside the disc</li>
+                <li>Increase joint space & mobility</li>
+                <li>Minimize muscle spasm</li>
+                <li>Relieve pressure on nerve root</li>
+                <li>Reduce pain</li>
+                <li>High standard of services</li>
+                <li>Comprehensive care</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-handsphysio" role="tabpanel" aria-labelledby="v-pills-handsphysio-tab">
+              <h5>Hands-on Physiotherapy</h5>
+              <img src="images/th33.jpg">
+              <p>There are different hands-on treatment approaches used by Mayfair Wellness Clinic. Our physiotherapist has training that includes techniques used by most hands-on professions such as chiropractors, osteopaths, massage therapists, and kinesiologists.</p>
+              
+              <ul>
+                <li>Joint mobilization & manipulation</li>
+                <li>Muscle Energy Techniques (METs)</li>
+                <li>Muscle stretching & strengthening</li>
+                <li>Muscle Neurodynamics</li>
+                <li>Myofascial Release (MFR)</li>
+                <li>Deep Transverse Friction (DTF)</li>
+                <li>Massage and soft tissue techniques & more</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-exercise" role="tabpanel" aria-labelledby="v-pills-exercise-tab">
+              <h5>Therapeutic Exercises</h5>
+              <img src="images/th33.jpg">
+              <p>Physiotherapy exercises have been scientifically proven to be one of the most effective ways that you can solve or prevent pain and injury.<br>
+
+              Our physiotherapists are experts in the prescription of the “best exercises” for you and the most appropriate “exercise dose” depending on your rehabilitation status.<br>
+
+              We will incorporate essential components of Pilates, yoga and exercise physiology to provide you with the best result.</p>
+              
+              <ul>
+                <li>Fast & Effective Physiotherapy</li>
+                <li>Best Physical Therapists.</li>
+                <li>High Standard of Services</li>
+                <li>Comprehensive Care</li>
+                
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-biomech" role="tabpanel" aria-labelledby="v-pills-biomech-tab">
+              <h5>Bio Mechanical Analysis</h5>
+              <img src="images/th33.jpg">
+              <p>Bio-mechanical assessment, observation, and diagnostic skills are paramount to the best treatment.<br>
+
+              Our physiotherapists are highly skilled health professionals with superb diagnostic skills to detect and ultimately avoid musculoskeletal and sports injuries</p>
+              
+              <ul>
+                <li>Fast & Effective Physiotherapy</li>
+                <li>Best Physical Therapists.</li>
+                <li>High Standard of Services</li>
+                <li>Comprehensive Care</li>
+              </ul>
+              <p><a href="#">View Details</a></p>
+            </div>
+            
+
+          </div>
+         </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section> -->
+
+<!--    <section id="treatment" class="p-5 bg-basic">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">PHYSIOTHERAPY TREATMENT</h2>
+        <p class="lead text-center text-black mb-3">
+          At Mayfair Wellness Clinic, we help patients with many different conditions. Please<br> see the diagram below for information on common conditions we treat and how our<br> physical therapist can help you.
+        </p>
+        <p class="text-center" style="color: #dc3545;">Click Each Service Box To Learn More</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="vertical-tab" role="tabpanel">
+                 Nav tabs 
+                <ul class="nav nav-tabs" role="tablist" area-orientation="vertical">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Section 1</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Section 2</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Section 3</a></li>
+                </ul>
+                 Tab panes 
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                        <h3>Section 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                        <h3>Section 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                        <h3>Section 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, magna a ultricies volutpat, mi eros viverra massa, vitae consequat nisi justo in tortor. Proin accumsan felis ac felis dapibus, non iaculis mi varius, mi eros viverra massa.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+    </section> -->
+
+    
+
+    <!-- THERAPISTS -->
+    <section id="therapists" class="p-5 bg-basic">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">MEET OUR PHYSIOTHERAPISTS</h2>
+        <p class="lead text-center text-black mb-5">
+          We are a full-service physiotherapy clinic in Gulshan Avenue, Dhaka that specializes<br> in individual care, treatment, education and prevention of injury.
+        </p>
+           <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-4">
+                   <img src="images/sp5.jpg">
+                   <h5 class="text-center">Dr. Umme Salma Urmy(PT)</h5>
+                   <p class="lead text-center">Consultant Physiotherapist and Executive<br> Director (Currently on leave for higher studies<br> in Canada)</p>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-lg-4">
+                   <img src="images/sp1.jpg">
+                   <h5 class="text-center">Dr. Md. Murad Hossain Mehedi(PT)</h5>
+                   <p class="lead text-center">Incharge and Senior Physiotherapist</p>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-lg-4">
+                   <img src="images/sp2.jpg">
+                   <h5 class="text-center">Dr. Rebeka Sultana(PT)</h5>
+                   <p class="lead text-center">Senior Physiotherapy Specialist</p>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-xs-12 col-sm-12 col-lg-3">
+                   <img src="images/Dr-Debika-Dhar.jpg" width="300" height="400">
+                   <h5 class="text-center">Dr. Debika Dhar(PT)</h5>
+                   <p class="lead text-center">Physiotherapist</p>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-lg-3">
+                   <img src="images/md-azharul_islam.jpg" width="300" height="400">
+                   <h5 class="text-center">Dr. Md.Azharul Islam(PT)</h5>
+                   <p class="lead text-center">Physiotherapist</p>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-lg-3">
+                   <img src="images/Dr-Jamila-Sultana.jpg" width="300" height="400">
+                   <h5 class="text-center">Dr. Jamila Sultana Urme(PT)</h5>
+                   <p class="lead text-center">Physiotherapist</p>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-lg-3">
+                   <img src="images/Dr.-Mokbul-Ahmed.jpg" width="300" height="400">
+                   <h5 class="text-center">Dr. Mokbul Ahmed Belal(PT)</h5>
+                   <p class="lead text-center">Physiotherapist</p>
+               </div>
+           </div>
+      </div>
+    </section>
+
+    
+    <!-- EQUIPMENTS -->
+    <section id="equipments" class="py-4" style="background-color: #e3f2fd;">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">OUR PHYSIOTHERAPY EQUIPMENT</h2>
+        <p class="lead text-center text-black mb-5">
+          We know the right physiotherapy  equipment is essential for a clinic that provides<br> physical therapy. This is why we’ve equipped our physiotherapy center with the best of<br> the best equipment.
+        </p>
+          <div class="row gy-2">
+               <div class="col">
+                   <img src="images/eq11.jpg">
+                   
+               </div>
+               <div class="col">
+                   <img src="images/eq22.jpg">
+                   
+               </div>
+               <div class="col">
+                   <img src="images/eq33.jpg">
+                   
+               </div>
+           
+               <div class="col">
+                   <img src="images/eq44.jpg">
+                   
+               </div>
+               <div class="col">
+                   <img src="images/eq55.jpg">
+                   
+               </div>
+               <div class="col">
+                   <img src="images/eq66.jpg">
+                   
+               </div>
+               <!--<div class="col">
+                   <img src="images/eq77.jpg">
+                   
+               </div>
+               <div class="col">
+                   <img src="images/eq88.jpg">
+                   
+               </div> -->
+          </div>
+      </div>
+    </section>
+
+    
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="p-5 bg-light">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">CLIENT TESTIMONIALS</h2>
+        <p class="lead text-center text-black mb-5">
+          Our physical therapists will help you reduce pain and bring back the joy of movement.<br> We’ve helped hundreds of patients reach their goals. Read what our patients had to<br> say about their experience.
+        </p>
+
+        <div class="row text-center g-4">
+          <div class="col-lg">
+            <div class="card text-light" style="background-color: #e3f2fd;">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3" style="color: #0dcaf0;">“got amazing care from Mayfair”</h5>
+                <p class="card-text" style="color: black;">
+                  I’ve got amazing care from Mayfair during my<br> therapy sessions. Special thanks to Umma Salma. She & her specialist team helped me to get rid of my chronic pain and truly healed my body. I’d been taking painkillers for over 2 months – so thankful to have finally recovered.</p>
+                  <p style="color: black;">Highly recommended physiotherapy clinic!</p>
+                
+                  <p style="color: black;"><b>Anonymous For Privacy</b></p>
+                  <p style="color: black;">Gulshan-2, Dhaka</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card text-light" style="background-color: #e3f2fd;">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3" style="color: #0dcaf0;">“my therapist is a gem”</h5>
+                <p class="card-text" style="color: black;">
+                  I cannot thank my therapist enough as well as Executive Director of the clinic, for their skilled, compassionate and focused help in setting me on the road to recovery and giving me back my painless life. From scheduling my visits to getting through my appointment everyone is very friendly and accommodating. Mayfair is one of the best of its kind and my therapist is a gem.
+                </p>
+                <p style="color: black;"><b>A. choudhury</b></p>
+                <p style="color: black;">Baridhara, Dhaka</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card text-light" style="background-color: #e3f2fd;">
+              <div class="card-body text-center">
+                
+                <h5 class="card-title mb-3" style="color: #0dcaf0;">“recommend it to anyone”</h5>
+                <p class="card-text" style="color: black;">
+                  After my first visit at Mayfair, I felt some relief and was encouraged and hopeful. I have been going two<br> times a week and would recommend this physiotherapy clinic to anyone experiencing pain. My only regret is that I did not find this place sooner. Everyone that works in this office is very nice and helpful. I will recommend it to anyone who asks. Thanks.
+                </p>
+                <p style="color: black;"><b>Anonymous For Privacy</b></p>
+                <p style="color: black;">Banani, Dhaka</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONSULTATION/APPOINTMENT -->
+    <section id="consultation" class="p-5" style="background-color: #e3f2fd;">
+      <div class="container overflow-hidden">
+        <h2 class="text-center text-blue">BOOK YOUR CONSULTATION</h2>
+        <p class="lead text-center text-black mb-5">
+          Enter your details below and we will follow up with you to book your appointment.
+        </p>
+
+        <div class="row text-center gx-6">
+          <div class="col-lg-6">
+            <div class="card bg-white text-black">
+              <div class="card-body text-center">
+                
+                <h4 class="card-title mb-3">SERVICE HOURS</h4>
+                <hr>
+                <ul class="s-hours list-unstyled">
+                  <li class="d-flex justify-content-between">Saturday - Thursday  <span>10am - 9pm</span></li>
+                  <hr>
+                  <li class="d-flex justify-content-between">Friday  <span>10am - 9pm</span></li><hr>
+                
+                  <h4 class="card-title mb-3">LOCATION</h4>
+                  <hr>
+                  <p>MCC Building (2nd Floor)<br>
+                  	76 Gulshan Avenue,<br>Dhaka-1212<br>
+                    Bangladesh</p>
+
+                   <p><a class="btn btn-info mt-3" href="#">01986660000</a></p>
+                   <p><a class="btn btn-info mt-3" href="#">02-9850038</a></p>
+
+
+                 </div>
+             </div>
+           </div><br>
+          <div class="col-lg-6">
+            <div class="card bg-white text-black">
+              <div class="card-body text-center">
+                
+                <h4 class="card-title mb-3">SCHEDULE YOUR APPOINTMENT</h4>
+                <p class="card-text">
+                  Submit your info to confirm your appointment
+                </p>
+
+                <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputName" class="form-label"></label>
+    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+  </div>
+  <div class="col-md-6">
+    <label for="inputAge" class="form-label"></label>
+    <input type="text" class="form-control" id="inputPassword4" placeholder="Age Group">
+    
+  </div>
+  <div class="col-12">
+    <label for="inputPhone" class="form-label"></label>
+    <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+  </div>
+  <div class="col-12">
+    <label for="inputEmail" class="form-label"></label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  </div>
+  <div class="col-12">
+    <label for="inputTreatment" class="form-label"></label>
+    <input type="text" class="form-control" id="inputTreatment" placeholder="Treatment you want">
+  </div>
+  <div class="col-md-6">
+    <label for="inputDate" class="form-label"></label>
+    <input type="date" class="form-control" id="inputTime" placeholder="mm/dd/yyyy">
+  </div>
+<div class="col-md-6">
+    <label for="inputTime" class="form-label"></label>
+    <input type="time" class="form-control" id="inputTime" placeholder="Appointment time">
+  </div>
+  <div class="col-12">
+    <label for="inputInfo" class="form-label"></label>
+    <textarea class="form-control" id="inputInfo" placeholder="Anything you think we need to know.."></textarea>
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-info">SCHEDULE MY APPOINTMENT</button>
+  </div>
+</form>
+                
+                
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </section>
+
+
+
+    <!-- FAQ -->
+    <section id="faq" class="p-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-blue">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="lead text-center text-black mb-5">
+          Learn commonly asked questions about our physiotherapy services.
+        </p>
+        <div class="d-flex justify-content-center">
+          <div class="accordion" id="accordionExample" style="width: 50%;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How does Physiotherapy help in Pain Relief?
+              </button>
+              </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Mayfair Wellness Clinic is enriched with advanced medical equipment and here the Physiotherapists are skilled with different manual techniques that help you in quick pain relief.
+
+
+                </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Is Physiotherapy treatment painful?
+              </button>
+              </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   Most of the Physiotherapy treatments are not painful but in some cases, for example, shock Wave therapy is a bit unpleasant in early 1 or 2 sessions.
+
+
+                 </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How many sessions do i need to cure the disease/pain?
+              </button>
+              </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   It depends on the severity of the condition. Most of the cases require 8-10 sessions.
+
+
+                 </div>
+               </div>
+            </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        What is the duration of the treatment session?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        The treatment session needs approximately 45 minutes.
+
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Are there any side effects of Physiotherapy treatment?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        You will be happy to know that there are no side effects of physiotherapy treatment.
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT INFO -->
+<section id="contact" class="p-5 bg-info">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+        	<div class="col-lg-4 col-sm-12 cols-xs-12">
+        		<h5 class="text-white">CONTACT INFO</h5><br>
+        		<p class="text-white">MCC Building(2nd Floor)<br>
+        			76 Gulshan Avenue,<br>
+        			Dhaka-1212<br>
+        			Bangladesh<br><br>
+        			Phone: 02-9850038<br>
+
+                    Mobile 1: 01986660000<br>
+
+                    Mobile 2: 01313896600<br>
+
+                    Email: info@mayfair.com.bd
+        		</p>
+        		
+        	</div>
+        	<div class="col-lg-4 col-sm-12 cols-xs-12">
+        		<h5 class="text-center text-white">LOCATION</h5><br>
+        		<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14603.85142292386!2d90.417415!3d23.784337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bcea0f9ff729528!2sMayfair%20Wellness%20Clinic!5e0!3m2!1sen!2sbd!4v1645306758768!5m2!1sen!2sbd" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+        		
+        	</div>
+        	<!--<div class="col">
+        		<h5 class="text-right text-white">QUICK LINKS</h5><br>
+        		
+        	</div> -->
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

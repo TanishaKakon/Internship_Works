@@ -12,16 +12,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Dashboard</title>
   </head>
   <body>
-    <!--HEADER NAVBAR START-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" class="logo" alt="logo"
+          ><img
+            src="images/logo.png"
+            class="logo"
+            alt="logo"
+            style="width: 135px; height: 55px"
+        /></a>
+        <a
+          class="nav-link active ms-auto d-lg-none"
+          aria-current="page"
+          href="#"
+          ><img src="images/avatar.png" class="nav-profile-img"
         /></a>
         <button
           class="navbar-toggler"
@@ -34,26 +44,53 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <form class="d-flex container ms-4 me-4">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 d-flex mb-lg-0">
             <li class="nav-item text-nowrap mt-2">
               <a class="nav-link active" aria-current="page" href="#"
-                >Arnob Rahee</a
+                >Tanisha Kabir Kakon</a
+              >
+            </li>
+            <li class="nav-item text-nowrap mt-2 d-lg-none d-sm-block">
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item text-nowrap mt-2 d-lg-none d-sm-block">
+              <a href="order.html" class="nav-link">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Order</span>
+              </a>
+            </li>
+            <li class="nav-item text-nowrap mt-2 d-lg-none d-sm-block">
+              <a
+                class="nav-link"
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#trackordermodal"
+                ><i class="fas fa-map-marker-alt"></i>
+                <span>Track Order</span></a
+              >
+            </li>
+            <li class="nav-item text-nowrap mt-2 d-lg-none d-sm-block">
+              <a href="settings.html" class="nav-link"
+                ><i class="fas fa-cog"></i> <span>Settings</span></a
+              >
+            </li>
+            <li class="nav-item text-nowrap mt-2 d-lg-none d-sm-block">
+              <a href="" class="nav-link"
+                ><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a
               >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><img src="images/face.jpg" class="face"
+              <a
+                class="nav-link active d-none d-lg-block"
+                aria-current="page"
+                href="#"
+                ><img src="images/avatar.png" class="nav-profile-img"
               /></a>
             </li>
           </ul>
@@ -63,29 +100,52 @@
     <!--HEADER NAVBAR ENDS-->
 
     <!--MAIN SECTION START-->
-
+    <section class="main-content">
     <div class="container order mt-5 mb-5">
       <div class="row d-flex">
         <!--SIDEBAR START-->
-        <div class="col-md-3 col-sm-12">
-          <ul class="nav flex-column text-uppercase">
+        <div class="col-lg-3 col-sm-12">
+          <ul class="nav flex-column text-uppercase d-none d-lg-block">
             <li class="nav-item">
-              <a class="nav-link active1" href="index.html">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sidebar" href="order.html">Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sidebar" href="track.html">Track Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sidebar" href="settings.html">Settings</a>
-            </li>
+                <a class="nav-link active1" href="index.html">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sidebar" href="order.html">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>Order</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link sidebar"
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#trackordermodal"
+                  ><i class="fas fa-map-marker-alt"></i>
+                  <span>Track Order</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sidebar" href="settings.html">
+                  <i class="fas fa-cog"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link sidebar" href="">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
           </ul>
         </div>
         <!--SIDEBAR END-->
 
-        <div class="col-md-9 col-sm-12">
+        <!--Order Card Start-->
+        <div class="col-lg-9 col-sm-12 col-md-12">
           <div class="card">
             <div class="row d-flex">
               <div class="col-md-12"></div>
@@ -96,7 +156,7 @@
             <div class="card-body">
               <div class="table-responsive">
                 <div class="row d-flex">
-                  <div class="col-sm-12 col-md-6 mb-2">
+                  <div class="col-sm-12 col-md-12 mb-2">
                     <div class="table_search">
                       <label
                         >Search:
@@ -156,8 +216,221 @@
             </div>
           </div>
         </div>
+        <!--Order Card End-->
+
+        <!--Track Order Modal Start-->
+        <div
+            class="modal fade"
+            id="trackordermodal"
+            tabindex="-1"
+            aria-labelledby="trackModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div
+                  class="modal-header"
+                  style="background-color: #3e9150; color: white"
+                >
+                  <h5 class="modal-title" id="trackModalLabel">Order Track</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    To track your order please enter your Order ID in the box
+                    below and press the "Track" button. This was given to you on
+                    your receipt and in the confirmation email you should have
+                    received.
+                  </p>
+                  <form>
+                    <div class="mt-2 mb-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="order-number"
+                        placeholder="Enter your order number"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    style="background-color: #3e9150; color: #fff;"
+                    data-bs-dismiss="modal"
+                  >
+                    TRACK ORDER
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal End-->
       </div>
     </div>
+    </section>
+    <!--Main section end-->
+
+
+    <!--Footer Starts-->
+    <footer class="footer">
+      <!--Top Footer Start-->
+      <div class="footer-top">
+        <div class="container mt-5 pt-5">
+          <div class="row d-flex flex-wrap g-0">
+            <div class="col-md-6 col-lg-3">
+              <div class="footer_col_1 mb-5">
+                <div class="footer-logo">
+                  <img src="images/logo.png" alt="footer_logo">
+                </div>
+                <p>
+                  Impulse hospital is one of the private hospitals in the prime location of Dhaka, providing health care with the latest medical, surgical, and diagnostic facilities.
+                </p>
+              </div>
+
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer_col_2 mb-5">
+                <ul>
+                  <li>
+                    <p style="color: #3e9150;">Main Menu</p>
+                  </li>
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">Doctors</a>
+                  </li>
+                  <li>
+                    <a href="">Appointments</a>
+                  </li>
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="">Blogs</a>
+                  </li>
+                </ul>
+
+              </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer_col_3 mb-5">
+                <ul>
+                  <li>
+                    <p style="color: #3e9150;">Contact Us</p>
+
+                  </li>
+                  <li>
+                    <a href="">304/E Shaheed Tazuddin
+                      <br><br>
+                      Avenue, Tejgaon (Behind
+                      <br><br>
+                      Channel-i office), Dhaka,
+                      <br><br>
+                      Bangladesh
+                    </a>
+                  </li>
+                  <br>
+                  <li>
+                    <a href="">support@impulsehospital.com</a>
+                  </li>
+                  <li>
+                    <a href="tel:10644">
+                      <button type="button" class="btn btn-success"
+                      style="padding: 5px 40px; background-color: #3e9150;">
+                       <i class="fas fa-phone-alt"></i>
+                       10644
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer_col_4 mb-5 text-center">
+                <ul>
+                  <li>
+                    <p style="color: #3e9150;">Newsletter</p>
+                  </li>
+                  <li>
+                    <div class="footer_email" style="margin-top: 12px;">
+                      <form>
+                        <input type="email" name="email" placeholder="Enter your email" required value>
+                        <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="footer_icons text-center text-lg-center">
+                      <p style="margin-top: 10px;">FOLLOW HEALTH UPDATES</p>
+                      <a href="">
+                        <i class="fab fa-facebook-square zoom"></i> 
+                      </a>
+                      <a href="">
+                        <i class="fab fa-linkedin zoom"></i> 
+                      </a>
+                      <a href="">
+                        <i class="fab fa-youtube zoom"></i> 
+                      </a>
+                      <a href="">
+                        <i class="fab fa-instagram zoom"></i> 
+                      </a>
+                      <a href="">
+                        <i class="fab fa-twitter zoom"></i>
+                      </a>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+      <!--Top footer end-->
+
+      <!--Bottom Footer Start-->
+      <div class="footer-bootom">
+        <div class="container">
+          <div class="row d-flex flex-wrap g-0">
+            <div class="col-lg-6 col-md-8 col-sm-12 my-auto mx-0">
+              <div class="footer_links text-center text-lg-start">
+                <a href="">FAQ</a>
+                <a href="">Code of Ethics</a>
+                <a href="">Patients Bill of Rights</a>
+                <a href="">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-12 my-auto">
+              <div class="footer_copyright text-center text-lg-end">
+                <p class="m-0">
+                  @ 2021
+                  <a href="">Impulse Hospital</a>
+                  all right reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Bottom Footer end-->
+    </footer>
+    <!--Footer End-->
+
 
     <script src="https://use.fontawesome.com/2d456c507a.js"></script>
 
